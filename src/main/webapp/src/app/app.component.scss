@@ -1,0 +1,33 @@
+@import "../styles.scss";
+
+:host {
+    display: flex;
+    height: 100%;
+}
+
+.phone {
+    height: 714px;
+    width: 414px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: mat-color($primary, 100);
+
+    .header {
+        background-color: mat-color($primary, 500);
+        color: mat-contrast($primary, 500);
+        width: 100%;
+        flex: 0 0 96px;
+    }
+
+    .content {
+        flex-grow: 1;
+    }
+}
+
+::ng-deep {
+    .phone > *:not(router-outlet) {
+        width: 100%;
+        height: 100%;
+    }
+}
