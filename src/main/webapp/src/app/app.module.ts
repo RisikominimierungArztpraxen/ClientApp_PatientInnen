@@ -11,7 +11,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { NotificationComponent } from './pages/notification/notification.component';
 import { QueueComponent } from './pages/queue/queue.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
-import {MatButtonModule} from '@angular/material/button'; 
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -28,9 +32,12 @@ registerLocaleData(localeDe);
   ],
   imports: [
     AppRoutingModule,
+    BrowserAnimationsModule,
     BrowserModule,
     HttpClientModule,
     MatButtonModule,
+    MatInputModule,
+    MatFormFieldModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

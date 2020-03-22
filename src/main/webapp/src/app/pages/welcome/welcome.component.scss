@@ -1,3 +1,13 @@
 :host {
     background-color: blue;
 }
+
+.header {
+    font-weight: 700;
+}
+
+::ng-deep {
+    .mat-form-field-outline > * {
+        background-color: white;
+    }
+}

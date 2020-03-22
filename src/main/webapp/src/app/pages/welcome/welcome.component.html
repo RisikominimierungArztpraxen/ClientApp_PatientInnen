@@ -1,2 +1,9 @@
-<p>welcome works!</p>
-<a mat-raised-button color="accent" routerLink="/heroes">Wartezeit abfragen</a>
+<p class="header">{{'welcome.title' | translate}}</p>
+<p>{{'welcome.paragraph1' | translate}}</p>
+<p>{{'welcome.paragraph2' | translate}}</p>
+
+<p>{{'welcome.waitingNumber' | translate}}</p>
+<mat-form-field appearance="outline">
+    <input matInput placeholder="Wartenummer">
+  </mat-form-field>
+<a mat-raised-button color="accent" routerLink="/queue">Wartezeit abfragen</a>
