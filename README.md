@@ -15,3 +15,13 @@ The files for the app are in scr/main/webapp
 
 The Frontend Part is a single page application that has a routing concept and is prepared for i18n. 
 It uses angular material and the theme is already done and can be used.
+
+## next steps
+
+### Finish the prototype
+
+Since time was running out we could not finish the app. To see how it should look like when it is finished, see [Link to prototype](https://3311r3.axshare.com/#id=u3u9al&p=statisch__benachrichtigung_patient&g=1)
+
+### Add notifications
+
+There will be notifications, send from the QueueApp, to the app.
